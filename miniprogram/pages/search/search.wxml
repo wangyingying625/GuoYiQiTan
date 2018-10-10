@@ -1,0 +1,14 @@
+<view class='index'>
+  <view class='search'>
+    <input type='text' confirm-type="search" placeholder='请输入搜索内容' class='searchInput' focus name='keyWord' bindinput='getKeyWord'></input>
+    <button class='sBtn' bindtap='searchClick'>搜索</button>
+  </view>
+  <scroll-view scroll-y="true"  class='content'>
+   <view wx:for="{{list}}" wx:key="{{index}}">
+    <navigator class='item' url='../listen/listen?id={{item.id}}'>
+      <view class='name'><text>{{item.name}}\n</text></view>
+      <view class='author'><text>{{item.author}}</text></view>
+    </navigator>
+    </view>
+  </scroll-view>
+  </view>

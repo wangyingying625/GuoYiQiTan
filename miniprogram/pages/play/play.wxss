@@ -1,0 +1,29 @@
+/* miniprogram/pages/play/play.wxss */
+.head{
+  padding-top: 25rpx;
+  padding-left: 15rpx;
+}
+.head #title{
+  font-size: 49rpx;
+}
+.head #author{
+  font-size: 30rpx;
+  color: rgb(173, 172, 172)
+}
+.head #data{
+    font-size: 32rpx;
+  color: rgb(173, 172, 172)
+}
+.content{
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  padding: 10rpx;
+  background-color: #ededed;
+  border: 1rpx solid #fff;
+  border-radius: 15rpx;
+    text-indent: 60rpx;
+}
+.content text{
+  text-indent: 130rpx;
+}

@@ -1,0 +1,33 @@
+.bg-gray{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(54, 43, 41, 0.1);
+}
+.list{
+  height: 100%;
+  width: 100%;
+  color: #000;
+  background-color: #ededed
+}
+.list-one{
+  height: 160rpx;
+  display: flex;
+  padding: 0 30rpx;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list-one-poster{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+.list-one-right{
+  margin: 0 0 0 30rpx;
+}
+.list-one-choose{
+  background-color: rgba(54, 43, 41, 0.6);
+}

@@ -1,0 +1,25 @@
+  <view class="bg-gray">
+  </view>
+<view>
+<scroll-view
+    class="list"
+    scroll-y 
+    scroll-top="{{audioIndex * 68}}"
+    >
+    <view wx:for="{{audioList}}" wx:key="{{index}}">
+      <view
+        id="{{index}}"
+        class="list-one {{index === audioIndex ? 'list-one-choose' : ''}}"
+        hover-class="list-one-choose"
+        bindtap="bindTapChoose"
+        >
+    
+        <image class="list-one-poster" src="{{item.poster}}"></image>
+        <view class="list-one-right">
+          <view class="name">{{item.name}}</view>
+          <view class="author">-----{{item.author}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  </view>

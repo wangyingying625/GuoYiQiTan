@@ -1,0 +1,17 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/listen/listen",
+    "pages/play/play",
+    "pages/search/search",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundColor": "#634536",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#756157",
+    "navigationBarTitleText": "国医奇谈",
+    "navigationBarTextStyle": "white"
+  }
+}

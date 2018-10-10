@@ -1,0 +1,35 @@
+<view class='index'>
+  <navigator class='search'  url='../search/search'>
+    <view  class='searchInput'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;搜我想听</text></view>
+    <button class='sBtn'>搜索</button>
+  </navigator>
+  <view class='hot'>
+    <text id='hot-text'>最受欢迎：</text>
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+      <view class='slider'>
+        <view wx:for="{{list}}" wx:key="{{index}}">
+          <navigator url="../listen/listen?id={{item.id}}">
+            <image src="{{item.poster}}"></image>
+            <text>{{item.name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+ <scroll-view scroll-y="true" bindscrolltolower="searchScrollLower" class='new' style='height:600rpx'>
+    <text id='new-text'>最新：</text>
+    <view class='list'>
+      <view wx:for="{{newList}}" wx:key="{{index}}">
+        <navigator url="../listen/listen?id={{item.id}}">
+          <image src='{{item.poster}}' ></image>
+          <view class='name'>
+            <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.name}}\n</text>
+            <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.introduce}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+   </scroll-view> 
+  <view class='loading' hidden='{{displayMore}}'>上拉加载更多</view>
+      <view class='over' hidden='{{displayOver}}'>没有更多了</view>
+</view>

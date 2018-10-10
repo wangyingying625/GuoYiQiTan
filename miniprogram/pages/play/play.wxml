@@ -1,0 +1,6 @@
+<view class='head'>
+<text id='title'>{{current.name}}\n</text>
+<text id='author'>{{current.author}}</text>
+<text id='data' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{current.date}}</text>
+<view class='content'><text>{{current.content}}</text></view>
+</view>
